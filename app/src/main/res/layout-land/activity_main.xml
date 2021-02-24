@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- это макет для альбомной ориентации -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment
+    <!-- Фрагмент с выбором заметок -->
+    <fragment android:name="com.example.android.inotes.NotesFragment"
         android:id="@+id/notes"
-        android:name="com.example.android.inotes.NotesFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+
+    <!-- Здесь будет текст выбранной заметки -->
+    <FrameLayout
+        android:id="@+id/text"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/detailsElementBackground"/>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -36,4 +47,4 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
-</FrameLayout>
+</LinearLayout>

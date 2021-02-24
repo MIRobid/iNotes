@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notes">
+        <item>Buy Milk</item>
+        <item>Finish homework</item>
+    </string-array>
+
+    <string-array name="text">
+        <item>Buy Milk at 11 am. Get eggs.</item>
+        <item>Finish homework on Monday at 12 am</item>
+    </string-array>
+</resources>

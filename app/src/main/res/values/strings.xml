@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">iNotes</string>
+    <string name="search">search</string>
+    <string name="settings">settings</string>
+    <string name="main">main</string>
+    <string name="favorite">favorite</string>
+    <string name="back">back</string>
 </resources>

@@ -97,7 +97,7 @@ public class NotesFragment extends Fragment {
     // Показать герб в ландшафтной ориентации
     private void showLandNotes(Note currentNote) {
         // Создаём новый фрагмент с текущей позицией для вывода герба
-        Fragment_full detail = Fragment_full.newInstance(currentNote);
+        NoteDetailFragment detail = NoteDetailFragment.newInstance(currentNote);
 
         // Выполняем транзакцию по замене фрагмента
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
@@ -111,9 +111,9 @@ public class NotesFragment extends Fragment {
     private void showPortNotes(Note currentNote) {
         // Откроем вторую activity
         Intent intent = new Intent();
-        intent.setClass(getActivity(), Notes_port.class);
+        intent.setClass(getActivity(), NotesPort.class);
         // и передадим туда параметры
-        intent.putExtra(Fragment_full.ARG_NOTE, currentNote);
+        intent.putExtra(NoteDetailFragment.ARG_NOTE, currentNote);
         startActivity(intent);
     }
 }

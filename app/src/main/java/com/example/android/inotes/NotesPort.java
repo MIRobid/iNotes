@@ -6,7 +6,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 
 // Эта activity для показа герба в портретной ориентации
-public class Notes_port extends AppCompatActivity {
+public class NotesPort extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class Notes_port extends AppCompatActivity {
         if (savedInstanceState == null) {
             // Если эта activity запускается первый раз (с каждым новым гербом первый раз),
             // то перенаправим параметр фрагменту
-            Fragment_full details = new Fragment_full();
+            NoteDetailFragment details = new NoteDetailFragment();
             details.setArguments(getIntent().getExtras());
             // Добавим фрагмент на activity
             getSupportFragmentManager()

@@ -3,7 +3,6 @@ package com.example.android.inotes;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.fragment.app.Fragment;
 
@@ -12,13 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Fragment_full extends Fragment {
+public class NoteDetailFragment extends Fragment {
 
     public static final String ARG_NOTE = "note";
     private static Note note;
 
-    public static Fragment_full newInstance(Note city) {
-        Fragment_full f = new Fragment_full();    // создание
+    public static NoteDetailFragment newInstance(Note city) {
+        NoteDetailFragment f = new NoteDetailFragment();    // создание
 
         // Передача параметра
         Bundle args = new Bundle();
